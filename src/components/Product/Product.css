@@ -1,0 +1,19 @@
+
+.card{
+    border-radius: 10px;
+    height: 580px;
+    border: none;
+}
+.card-footer{
+    background: rgba(255, 153, 0, 0.3);
+    cursor: pointer;
+}
+.card-footer:hover{
+    background-color: salmon;
+}
+
+.price-title{
+    position: absolute;
+    bottom: 10px;
+}
+
