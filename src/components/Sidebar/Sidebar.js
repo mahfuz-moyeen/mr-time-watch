@@ -3,18 +3,20 @@ import Cart from '../Cart/Cart';
 import './Sidebar.css'
 
 const Sidebar = ({ cart, setCart }) => {
+    // selected random watch
     const randomWatch = cart => {
         const random = Math.floor(Math.random() * cart.length)
         const selectCart = [cart[random]]
         setCart(selectCart);
     }
+    // remove all cart item
     const removeAll = () => {
         setCart([]);
     }
     return (
-        <div className='selected-watch container'>
+        <div className='selected-watch container' id='selected-watch'>
             <div className='selected-section p-3 w-100 text-center bg-white shadow'>
-                <h2>Selected Watchs</h2>
+                <h2>Selected Watch</h2>
                 <div>
                     {
                         cart.map(item => <Cart

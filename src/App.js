@@ -1,15 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Products from './components/Products/Products';
 import Sidebar from './components/Sidebar/Sidebar';
 import { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
+import Menubar from './components/Menubar/Menubar';
+import Question from './components/Question/Question';
 
 function App() {
   const [products, setProducts] = useState([])
   const [cart, setCart] = useState([])
 
+  // add to cart
   const handleAddToCart = watch => {
     let newCart = []
     const exists = cart.find(product => product.id === watch.id)
@@ -20,14 +22,14 @@ function App() {
       alert('You all ready add this watch')
       newCart = [...cart]
     }
-    if(newCart.length <= 4){
+    if (newCart.length <= 4) {
       setCart(newCart)
     }
-    else{
+    else {
       alert('Oops !!!  You already add 4 watch')
     }
   }
-
+  // load product data from products.json
   useEffect(() => {
     fetch('products.json')
       .then(res => res.json())
@@ -36,9 +38,8 @@ function App() {
 
   return (
     <div>
-      <div className="header-section">
-        <Header></Header>
-      </div>
+      <Menubar></Menubar>
+      <Header id='home'></Header>
       <Row className='mx-0'>
         <Col xs={12} lg={8} className='order-last order-lg-first'>
           <Products className="products-section"
@@ -53,6 +54,10 @@ function App() {
           ></Sidebar>
         </Col>
       </Row>
+      <div className='container my-5' id='question'>
+        <h2>Question and Answer</h2>
+      <Question></Question>
+      </div>
     </div>
   );
 }
