@@ -11,9 +11,6 @@ function App() {
   const [cart, setCart] = useState([])
 
   const handleAddToCart = watch => {
-    // if (cart == []) {
-    //   setCart([])
-    // }
     let newCart = []
     const exists = cart.find(product => product.id === watch.id)
     if (!exists) {
@@ -23,7 +20,12 @@ function App() {
       alert('You all ready add this watch')
       newCart = [...cart]
     }
-    setCart(newCart)
+    if(newCart.length <= 4){
+      setCart(newCart)
+    }
+    else{
+      alert('Oops !!!  You already add 4 watch')
+    }
   }
 
   useEffect(() => {
