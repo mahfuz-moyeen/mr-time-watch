@@ -25,7 +25,8 @@ const Product = ({ product, handleAddToCart }) => {
                             </div>
                         </Card.Body>
                         <Card.Footer className='text-center border-top-0 bg-transparent'>
-                            <button className='add-cart-button' onClick={() => handleAddToCart(product)}>Add to card <FontAwesomeIcon icon={faCartPlus} /></button>
+                            <button className='add-cart-button' onClick={() => handleAddToCart(product)}>Add to card 
+                            <FontAwesomeIcon icon={faCartPlus} /></button>
                         </Card.Footer>
                     </Card>
                 </CardGroup>

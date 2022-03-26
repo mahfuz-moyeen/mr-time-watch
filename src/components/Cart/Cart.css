@@ -1,0 +1,13 @@
+.cart-item-title{
+    font-size: 11px;
+
+}
+.cart-item-image{
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.column{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
