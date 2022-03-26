@@ -5,22 +5,26 @@ import './Sidebar.css'
 const Sidebar = ({ cart, setCart }) => {
     // selected random watch
     const randomWatch = cart => {
-        console.log(cart);
         if (cart.length) {
             const random = Math.floor(Math.random() * cart.length)
             const selectCart = [cart[random]]
             setCart(selectCart);
-            console.log('if');
         }
         else{
             alert('First choose 4 watch')
-            console.log('else');
         }
     }
     // remove all cart item
     const removeAll = () => {
         setCart([]);
     }
+    // remove one cart item
+    const removeItem= removeItem =>{
+        let removeCart = []
+        removeCart = cart.filter(item=> item.id !== removeItem.id)
+        setCart(removeCart)
+    }
+
     return (
         <div className='selected-watch container' id='selected-watch'>
             <div className='selected-section p-3 w-100 text-center bg-white shadow'>
@@ -30,6 +34,7 @@ const Sidebar = ({ cart, setCart }) => {
                         cart.map(item => <Cart
                             key={item.id}
                             item={item}
+                            removeItem={removeItem}
                         ></Cart>)
                     }
                 </div>

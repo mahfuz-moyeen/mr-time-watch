@@ -4,8 +4,8 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import './Cart.css'
 
-const Cart = ({ item: { name, img } }) => {
-
+const Cart = ({ item, removeItem }) => {
+    const { name, img } = item
     return (
         <Container>
             <div className='shadow-sm rounded-pill position-relative p-1 my-1 selected-items'>
@@ -21,7 +21,9 @@ const Cart = ({ item: { name, img } }) => {
                     <h5 className='cart-item-title'>{name}</h5>
                 </div>
                 <div className=' my-auto'>
-                <FontAwesomeIcon className='delete-button' icon={faTrash} />
+                    <button className='btn' onClick={() => removeItem(item)}>
+                        <FontAwesomeIcon className='delete-button' icon={faTrash} />
+                    </button>
                 </div>
             </div>
         </Container>

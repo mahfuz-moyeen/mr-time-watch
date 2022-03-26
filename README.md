@@ -14,4 +14,4 @@ It is a single-page  watch shop app. If You are confuse to buy which watch , you
 2. React Bootstrap
 3. 12 watch Product api Local-data
 4. React font awesome
-5. Html5 , css3 , js(es6) 
+5. Html5 , css3 , js(es6)
