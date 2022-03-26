@@ -5,7 +5,7 @@ import './Question.css'
 const Question = () => {
     return (
         <div>
-            {/* <Accordion>
+            <Accordion>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>How to React.js work ?</Accordion.Header>
                     <Accordion.Body>
@@ -64,7 +64,7 @@ const Question = () => {
                         now update setCart(2) then cart value is 2; here useState() react hook use its setCart function to update cart value . useState() always use to update variable by its defualt function
                     </Accordion.Body>
                 </Accordion.Item>
-            </Accordion> */}
+            </Accordion>
         </div>
     );
 };

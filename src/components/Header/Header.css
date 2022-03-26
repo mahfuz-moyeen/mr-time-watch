@@ -1,0 +1,24 @@
+.time-text{
+    color: #7815d4;
+}
+
+.band-name{
+    font-size: 1.5em;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+@media screen and (max-width:768px) {
+    .header-title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
