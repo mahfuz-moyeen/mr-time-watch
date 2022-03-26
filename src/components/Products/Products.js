@@ -3,7 +3,7 @@ import { Row } from 'react-bootstrap';
 import Product from '../Product/Product';
 import './Products.css'
 
-const Products = ({ products }) => {
+const Products = ({ products, handleAddToCart }) => {
     return (
         <div className='container'>
             <h2 className='text-center my-4'>Total products: {products.length}</h2>
@@ -12,6 +12,7 @@ const Products = ({ products }) => {
                     products.map(product => <Product
                         key={product.id}
                         product={product}
+                        handleAddToCart={handleAddToCart}
                     ></Product>)
                 }
             </Row>

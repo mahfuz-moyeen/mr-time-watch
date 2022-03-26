@@ -1,84 +1,84 @@
 [
     {
       "id": "w1",
-      "name": "Khaki Automatic Men's Watch",
+      "name": "Khaki Automatic",
       "seller": "HAMILTON",
       "price": 410,
       "img": "./products-img/watch01.jpg"
     },
     {
       "id": "w2",
-      "name": "Gentleman Powermatic Blue Dial Watch",
+      "name": "Gentleman Powermatic Blue Dial",
       "seller": "TISSOT",
       "price": 510,
       "img": "./products-img/watch02.jpg"
     },
     {
       "id": "w3",
-      "name": "Khaki Aviation X-Wind Automatic Blue Dial Men's Watch",
+      "name": "Khaki Aviation X-Wind Blue Dial",
       "seller": "HAMILTON",
       "price": 899,
       "img": "./products-img/watch03.jpg"
     },
     {
       "id": "w4",
-      "name": "SEIKO 5 Automatic Blue Dial Men's Watch",
+      "name": "SEIKO 5 Automatic Blue Dial",
       "seller": "SEIKO",
       "price": 196,
       "img": "./products-img/watch04.jpg"
     },
     {
       "id": "w5",
-      "name": "Vintage V2-94 Limited Edition Black Carbon Fibre Dial",
+      "name": "Vintage V2-94 Limited Edition",
       "seller": "BELL AND ROSS",
       "price": 196,
       "img": "./products-img/watch05.jpg"
     },
     {
       "id": "w6",
-      "name": "5 Blue Dial Blue Canvas Men's Watch",
+      "name": "5 Blue Dial Blue Canvas",
       "seller": "SEIKO",
       "price": 93,
       "img": "./products-img/watch06.jpg"
     },
     {
       "id": "w7",
-      "name": "Fossil Ledger Three-Hand Brown Leather Men's Watch",
+      "name": "Fossil Ledger Brown Leather",
       "seller": "FOSSIL",
       "price": 105,
       "img": "./products-img/watch07.jpg"
     },
     {
       "id": "w8",
-      "name": "Titan NP1805NL02 Workwear Quartz Men’s Watch",
+      "name": "NP1805NL02 Workwear Quartz",
       "seller": "TITAN",
       "price": 90,
       "img": "./products-img/watch08.jpg"
     },
     {
       "id": "w9",
-      "name": "Titan 1802NL02 Workwear Quartz Men’s Watch",
+      "name": "1802NL02 Workwear Quartz",
       "seller": "TITAN",
       "price": 50,
       "img": "./products-img/watch09.jpg"
     },
     {
       "id": "w10",
-      "name": "Casio MTP-VT01L-1B Enticer Men’s Watch",
+      "name": "Casio MTP-VT01L-1B Enticer",
       "seller": "CASIO",
       "price": 40,
       "img": "./products-img/watch10.jpg"
     },
     {
       "id": "w11",
-      "name": "Fastrack Sports Analog Watch For Men’s",
+      "name": "Fastrack Sports Analog",
       "seller": "FASTRACK",
       "price": 35,
       "img": "./products-img/watch11.jpg"
     },
     {
       "id": "w12",
-      "name": "Fastrack Silver Stainless Steel Strap Watch",
+      "name": "Fastrack Silver Stainless Steel",
       "seller": "FASTRACK",
       "price": 40,
       "img": "./products-img/watch12.jpg"

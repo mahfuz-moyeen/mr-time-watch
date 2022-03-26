@@ -1,10 +1,11 @@
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import {  Card, CardGroup, Col } from 'react-bootstrap';
+import { Card, CardGroup, Col } from 'react-bootstrap';
 import './Product.css'
 
-const Product = ({ product: { name, price, img, seller } }) => {
+const Product = ({ product, handleAddToCart }) => {
+    const { name, price, img, seller } = product
     return (
         <div>
             <Col>
@@ -24,7 +25,7 @@ const Product = ({ product: { name, price, img, seller } }) => {
                             </div>
                         </Card.Body>
                         <Card.Footer className='text-center border-top-0 bg-transparent'>
-                            <button className='add-cart-button'>Add to card <FontAwesomeIcon icon={faCartPlus} /></button>
+                            <button className='add-cart-button' onClick={() => handleAddToCart(product)}>Add to card <FontAwesomeIcon icon={faCartPlus} /></button>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
