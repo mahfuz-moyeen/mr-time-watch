@@ -5,9 +5,17 @@ import './Sidebar.css'
 const Sidebar = ({ cart, setCart }) => {
     // selected random watch
     const randomWatch = cart => {
-        const random = Math.floor(Math.random() * cart.length)
-        const selectCart = [cart[random]]
-        setCart(selectCart);
+        console.log(cart);
+        if (cart.length) {
+            const random = Math.floor(Math.random() * cart.length)
+            const selectCart = [cart[random]]
+            setCart(selectCart);
+            console.log('if');
+        }
+        else{
+            alert('First choose 4 watch')
+            console.log('else');
+        }
     }
     // remove all cart item
     const removeAll = () => {
