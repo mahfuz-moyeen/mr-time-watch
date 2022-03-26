@@ -1,8 +1,7 @@
 .selected-watch{
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-items: center;
-    justify-content: end;
 }
 .selected-section{
     border-radius: 10px;

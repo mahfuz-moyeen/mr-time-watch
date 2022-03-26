@@ -1,22 +1,27 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import './Question.css'
 
 const Question = () => {
     return (
         <div>
             <Accordion>
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header>Accordion Item #1</Accordion.Header>
+                    <Accordion.Header>How to React work ?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt
+
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                    <Accordion.Header>Props VS State</Accordion.Header>
                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
+
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                    <Accordion.Header>How to useState work ?</Accordion.Header>
+                    <Accordion.Body>
+
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

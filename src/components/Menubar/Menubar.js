@@ -5,7 +5,7 @@ const Menubar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top'>
                 <Container>
-                    <Navbar.Brand href="#home"><img src={logo} alt='Mr Time watch shop logo' width={60} height={60} className="d-inline-block align-top" />
+                    <Navbar.Brand href="#home"><img src={logo} alt='Mr Time watch shop logo' width={50} height={50} className="d-inline-block align-top" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 

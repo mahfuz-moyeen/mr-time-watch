@@ -6,7 +6,7 @@ import './Products.css'
 const Products = ({ products, handleAddToCart }) => {
     return (
         <div className='container'>
-            <h2 className='text-center my-4'>Total products: {products.length}</h2>
+            <h2 className='text-center my-4 fs-5'>Total products: {products.length}</h2>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {
                     products.map(product => <Product

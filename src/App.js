@@ -39,7 +39,7 @@ function App() {
   return (
     <div>
       <Menubar></Menubar>
-      <Header id='home'></Header>
+      <Header></Header>
       <Row className='mx-0'>
         <Col xs={12} lg={8} className='order-last order-lg-first'>
           <Products className="products-section"

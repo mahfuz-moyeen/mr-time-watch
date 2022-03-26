@@ -1,18 +1,19 @@
 .cart-item-title{
-    font-size: 14px;
+    font-size: 13px;
 }
 .cart-item-image{
-    border: 2px solid rgb(187, 224, 255);
-}
-
-.column{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px;
+    border-left: 2px solid #7e1adb;
+    border-right: 2px solid #7e1adb;
 }
 
 .delete-button:hover{
     color: red;
     cursor: pointer;
+}
+.selected-items{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 2px;
+    align-items: baseline;
+    justify-content: center;
 }
