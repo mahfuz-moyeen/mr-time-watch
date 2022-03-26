@@ -1,15 +1,15 @@
 
-.card{
-    border-radius: 10px;
-    height: 580px;
+.card-section{
+    height: 450px;
+}
+
+.add-cart-button{
+    color: blueviolet;
     border: none;
+    background: none;
 }
-.card-footer{
-    background: rgba(255, 153, 0, 0.3);
-    cursor: pointer;
-}
-.card-footer:hover{
-    background-color: salmon;
+.add-cart-button:hover{
+    color: green;
 }
 
 .price-title{
