@@ -11,14 +11,17 @@ function App() {
   const [cart, setCart] = useState([])
 
   const handleAddToCart = watch => {
-    let newCart =[]
+    // if (cart == []) {
+    //   setCart([])
+    // }
+    let newCart = []
     const exists = cart.find(product => product.id === watch.id)
     if (!exists) {
       newCart = [...cart, watch]
     }
-    else{
+    else {
       alert('You all ready add this watch')
-      newCart= [...cart]
+      newCart = [...cart]
     }
     setCart(newCart)
   }
@@ -44,7 +47,7 @@ function App() {
         <Col xs={12} lg={4} className='order-first order-lg-last'>
           <Sidebar className="sidebar-section"
             cart={cart}
-            setCart ={setCart}
+            setCart={setCart}
           ></Sidebar>
         </Col>
       </Row>

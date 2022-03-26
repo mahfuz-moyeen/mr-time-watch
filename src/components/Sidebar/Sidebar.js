@@ -2,12 +2,14 @@ import React from 'react';
 import Cart from '../Cart/Cart';
 import './Sidebar.css'
 
-const Sidebar = ({ cart,setCart }) => {
+const Sidebar = ({ cart, setCart }) => {
     const randomWatch = cart => {
         const random = Math.floor(Math.random() * cart.length)
         const selectCart = [cart[random]]
         setCart(selectCart);
-        console.log(random);
+    }
+    const removeAll = () => {
+        setCart([]);
     }
     return (
         <div className='selected-watch container'>
@@ -22,8 +24,14 @@ const Sidebar = ({ cart,setCart }) => {
                     }
                 </div>
                 <div className='d-flex flex-column gap-2 w-75 mx-auto my-3'>
-                    <button onClick={()=> randomWatch(cart)} className='btn btn-outline-success'>Choose 1 for me</button>
-                    <button className='btn btn-outline-danger'>Remove all</button>
+                    <button
+                        onClick={() => randomWatch(cart)}
+                        className='btn btn-outline-success'
+                    >Choose 1 for me</button>
+                    <button
+                        onClick={removeAll}
+                        className='btn btn-outline-danger'
+                    >Remove all</button>
                 </div>
             </div>
         </div>
