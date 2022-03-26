@@ -1,7 +1,7 @@
 
 .main-section{
   background-color: #f3f3f3;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 4fr 2fr;
-  gap: 5px;
+  gap: 5px; */
 }

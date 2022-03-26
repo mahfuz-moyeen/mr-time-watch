@@ -9,7 +9,7 @@ const Product = ({ product, handleAddToCart }) => {
     return (
         <div>
             <Col>
-                <CardGroup className='card-section shadow rounded-3'>
+                <CardGroup className='card-section shadow rounded-3 my-3'>
                     <Card>
                         <Card.Img variant="top" className='p-2' src={img} />
                         <Card.Body className='position-relative'>

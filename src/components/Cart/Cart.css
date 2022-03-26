@@ -1,13 +1,18 @@
 .cart-item-title{
-    font-size: 11px;
-
+    font-size: 14px;
 }
 .cart-item-image{
-    border: 1px solid rgb(209, 209, 209);
+    border: 2px solid rgb(187, 224, 255);
 }
 
 .column{
     display: flex;
     justify-content: start;
     align-items: center;
+    padding: 10px;
+}
+
+.delete-button:hover{
+    color: red;
+    cursor: pointer;
 }
